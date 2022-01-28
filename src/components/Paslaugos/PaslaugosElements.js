@@ -31,9 +31,11 @@ export const PaslaugosCard = styled.div`
 
 export const PaslaugosHeading = styled.h1`
   font-size: clamp(2rem, 2.5vw, 3rem);
+  font-weight:400;
   text-align: center;
   margin-bottom: 3rem;
   color: #292929;
+  text-transform: uppercase;
 `;
 
 
