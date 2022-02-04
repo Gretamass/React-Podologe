@@ -1,0 +1,37 @@
+.listItem + .listItem {
+    margin-top: 12px;
+  }
+
+
+  
+.testimonials {
+    background-color: #8082BB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 30px;
+    font-size: 24px;
+    margin-bottom: 150px;
+}
+
+.testimonial{
+    background-color: white;
+    margin: 15px;
+    border-radius: 20px;
+    height: fit-content;
+    width: min-conten;
+    padding: 15px;
+}
+
+.testimonialsList{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 640px) {
+    .testimonial{
+    
+        font-size: 20px;   
+    }
+}

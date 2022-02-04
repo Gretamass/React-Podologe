@@ -1,5 +1,5 @@
 
-export const paslaugosData = [
+export const servicesData = [
     {
         desc: 'Medicininis pedikiūras',
     },

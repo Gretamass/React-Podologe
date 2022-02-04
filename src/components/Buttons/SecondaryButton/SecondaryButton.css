@@ -1,0 +1,18 @@
+.secondaryButton{
+    font-size: 1.3rem;
+    padding: 1rem 3rem;
+
+    border: none;
+    background-color: #8082BB;
+    border-radius:20px;
+    font-weight: 500;
+    color:  rgb(241, 241, 241);
+    width: fit-content;
+    transition: 0.2 ease-out;
+}
+
+.secondaryButton:hover {
+      background: #9194ca;
+      transition: 0.2s ease-out;
+      cursor: pointer;
+}

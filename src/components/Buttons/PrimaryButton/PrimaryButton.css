@@ -1,0 +1,18 @@
+.primaryButton{
+    font-size: 1.1rem;
+    padding: 1rem 3rem;
+    margin: 2rem 4rem;
+    border: none;
+    background: rgb(241, 241, 241) ;
+    border-radius:20px;
+    color: #292929;
+    width: fit-content;
+    transition: 0.2 ease-out;
+}
+
+.primaryButton:hover {
+      background: rgb(200, 200, 200);
+      color: #292929;
+      transition: 0.2s ease-out;
+      cursor: pointer;
+}

@@ -1,0 +1,150 @@
+html,
+body {
+  box-sizing: inherit;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden; 
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+.app {
+  height: 100%;
+  background-color: rgb(241, 241, 241);
+}
+
+
+/* FONT */
+
+h1, h2, h3, h4, h5, h6, p ,a {
+  font-family:  'Montserrat', sans-serif;
+  font-weight: 300;
+}
+
+h1 {
+  color: var(--text-color);
+  padding: 3px;
+  font-size: 42px;
+  font-weight: 500;
+  
+}
+h2{
+  color: var(--text-color);
+  padding: 3px;
+  font-size: 17px;
+  font-weight: 300;
+}
+
+h3{
+  color: var(--text-color);
+  padding: 3px;
+  font-size: 30px;
+  font-weight: 400;
+}
+a{
+  font-weight: 400;
+  text-decoration: none;
+}
+
+* {
+  font-family:  'Montserrat', sans-serif;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+/* Global */
+
+
+.container{
+  display: flex;
+  max-width: 1140px;
+}
+
+.roundedContainerFull{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+ 
+
+  padding-top: 1rem;
+}
+
+.roundedContainerFullSimple{
+  
+  margin: 0 auto;
+  max-width: 1140px;
+}
+
+.roundedContainerMid{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  background: #8082BB;
+  border-radius:20px;
+  padding-top: 1rem;
+  max-width: 1140px;
+}
+
+.roundedContainerWrapper{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  background: #8082BB;
+  border-radius:20px;
+  padding-top: 1rem;
+  width: fit-content;
+  padding: 10px 100px 0px 100px;
+}
+
+.roundedContainerSmall{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  background-color:  #8082BB;
+  border-radius:20px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 60%;
+}
+
+
+.headingDark{
+  font-size: clamp(2.2rem, 2.5vw, 3rem);
+  font-weight:400;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #292929;
+  text-transform: uppercase;
+}
+
+.headingLight{
+  font-size: clamp(2rem, 2.5vw, 3rem);
+  font-weight:400;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: rgb(241, 241, 241);
+  text-transform: uppercase;
+}

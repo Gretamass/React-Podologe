@@ -1,0 +1,12 @@
+.roundedWrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    background: #8082BB;
+    border-radius:20px;
+    padding-top: 1rem;
+}

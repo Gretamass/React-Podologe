@@ -1,0 +1,71 @@
+.pricelist{
+    height: fit-content;
+    margin-bottom: 100px;
+}
+
+.list{
+    display: flex;
+    justify-content: space-between;
+    
+    width: 100%;
+    font-weight: 400;
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: rgb(241, 241, 241);
+}
+.listName{
+    width: 80%;
+    text-align: left;
+    font-weight: 400;
+}
+
+.listPrice{
+    text-align: right;
+    font-weight: 300;
+}
+
+@media screen and (max-width: 1150px) {
+    .fullContainerPriceList{
+    
+        width: 100%;
+        border-radius: 0px;
+        padding:  10px 60px;
+    }
+}
+
+
+@media screen and (max-width: 780px) {
+    .listName{
+        width: 70%;
+
+    }
+}
+
+
+@media screen and (max-width: 640px) {
+    .list{
+       flex-direction: column;
+       padding-top: 0.5rem;
+       padding-bottom: 0.5rem;
+
+    }
+
+    .listName{
+        width: 100%;
+        text-align: center;
+    }
+    
+    .listPrice{
+        text-align: center;
+    }
+    
+}
+
+@media screen and (max-width: 560px) {
+    .fullContainerPriceList{
+
+        padding:  10px 10px;
+    }
+}

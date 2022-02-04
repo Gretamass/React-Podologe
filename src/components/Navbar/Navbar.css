@@ -1,0 +1,47 @@
+.navigation{
+    background: transparent;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+}
+
+.navLink{
+    color: #292929;
+    font-size: 2rem;
+    font-weight:500;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+    
+ 
+}   
+@media screen and (max-width: 400px) {
+    .navLink{
+      position: absolute;
+      top: 10px;
+      left: 25px;
+    }
+}
+
+.navIcon{
+    display: block;
+    height:80px;
+    width:min-content;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    color: #292929;
+    justify-content: center;
+    p {
+      transform: translate(-175%, 100%);
+      font-weight: bold;
+    }
+}
+
+.bars{
+    font-size: 2rem;
+    transform: translate(-50%, -15%);
+}
