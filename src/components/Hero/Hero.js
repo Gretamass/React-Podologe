@@ -1,8 +1,10 @@
 
+import React from "react";
 import SecondaryButton from '../Buttons/SecondaryButton/SecondaryButton';
 import hero from '../images/hero1.JPG';
 import './Hero.css';
 import '../../App.css';
+
 
 const Hero = () => {
   return (

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import './App.css';
 import { BrowserRouter as Router } from 'react-router-dom';
+
 import Hero from './components/Hero';
 import Services from './components/Services';
 import { servicesData  } from './components/Services/data';
@@ -15,28 +16,35 @@ import { galleryData  } from './components/Gallery/data';
 import Footer from './components/Footer/Footer';
 import ContactUs from './components/ContantUs/ContactUs';
 import Navbar from './components/Navbar/Navbar';
+import Sidebar from './components/Sidebar/index';
+
 
 function App() {
 
-  const [open, setOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
-const handleClick = () => {
-  setOpen(!open);
-};
+  const toggle = () =>{
+      setIsOpen(!isOpen);
+  }
+  
   return (
- 
-      <div className="app">
-        <Navbar handleClick={handleClick} />
-        <Hero />
+      <Router>
+          <div className="app">
 
-        <Services heading="Teikiamos paslaugos" buttontext="Sužinoti daugiau" data={servicesData}/>
-        <Articles heading="Publikacijos" buttontext="Skaityti daugiau" data={articlesData}/>
-        <Testimonials heading="Atsiliepimai" buttontext="Sužinoti daugiau" data={testimonialsData} />
-        <Pricelist heading="Kainoraštis" data={pricelistData} />
-        <Gallery heading="Galerija" buttontext="Žiūrėti daugiau" data={galleryData}/>
-        <ContactUs heading="Susisiekite su mumis" />
-        <Footer />
-      </div>
+            <Navbar toggle={toggle}/>
+            <Sidebar  isOpen={isOpen} toggle={toggle} />
+            <Hero />
+
+            <Services heading="Teikiamos paslaugos" buttontext="Sužinoti daugiau" data={servicesData}/>
+            <Articles heading="Publikacijos" buttontext="Skaityti daugiau" data={articlesData}/>
+            <Testimonials heading="Atsiliepimai" buttontext="Sužinoti daugiau" data={testimonialsData} />
+            <Pricelist heading="Kainoraštis" data={pricelistData} />
+            <Gallery heading="Galerija" buttontext="Žiūrėti daugiau" data={galleryData}/>
+            <ContactUs heading="Susisiekite su mumis" />
+            <Footer />
+          </div>
+      </Router>
+
 
   );
 }
