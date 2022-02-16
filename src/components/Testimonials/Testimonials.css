@@ -1,37 +1,76 @@
 .listItem + .listItem {
-    margin-top: 12px;
+    margin-top: 16px;
   }
 
 
   
 .testimonials {
-    background-color: #8082BB;
+    background-color: #9991cc;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 24px 30px;
-    font-size: 24px;
+    padding: 24px 32px;
+    font-size: 22px;
     margin-bottom: 150px;
 }
 
 .testimonial{
     background-color: white;
-    margin: 15px;
+    margin: 16px;
     border-radius: 20px;
     height: fit-content;
-    width: min-conten;
-    padding: 15px;
+    padding: 16px;
+    width: 100%;
 }
 
 .testimonialsList{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    max-width: 1440px;
 }
+
+.lists{
+    display: flex ;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.leftList{
+    width: 50%;
+    padding: 16px;
+}
+
+.rightList{
+    width: 50%;
+    padding: 16px;
+}
+
+@media screen and (max-width: 900px) {
+    .testimonial{
+        margin: 0px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+    .leftList{
+        width: 100%;
+        padding: 0px;
+    }
+
+    .rightList{
+        display: none;
+    }
+}
+
 
 @media screen and (max-width: 640px) {
     .testimonial{
     
         font-size: 20px;   
+    }
+    .rightList{
+        display: none;
     }
 }

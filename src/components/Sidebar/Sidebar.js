@@ -36,13 +36,13 @@ const Sidebar = ({ open }) => {
             <div className='closeIcon'>FaTimes</div>
         </div>
         <div className='sidebarMenu' variants={LinkBoxVariants}>
-            <div className='sidebarLink'>Paslaugos</div>
-            <div className='sidebarLink'>Kainoraštis</div>
-            <div className='sidebarLink'>Atsiliepimai</div>
-            <div className='sidebarLink'>Publikacijos</div>
-            <div className='sidebarLink'>Apie Mus</div>
-            <div className='sidebarLink'>Galerija</div>
-            <div className='sidebarLink'>Kontaktai</div>
+            <Link to="/services" className='sidebarLink'>Paslaugos</Link>
+            <Link to="/price-list"  className='sidebarLink'>Kainoraštis</Link>
+            <Link to="/testimonials"  className='sidebarLink'>Atsiliepimai</Link>
+            <Link to="/articles"  className='sidebarLink'>Publikacijos</Link>
+            <Link to="/about-us" className='sidebarLink'>Apie Mus</Link>
+            <Link to="/gallery" className='sidebarLink'>Galerija</Link>
+            <Link to="/contact-us" className='sidebarLink'>Kontaktai</Link>
 
         </div>
         <div className='sideBtnWrap'>

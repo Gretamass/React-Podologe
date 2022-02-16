@@ -49,7 +49,9 @@
 .titleNav{
     font-size: 28px;
     text-transform: uppercase;
+    color: #292929 !important;
 }
+
 
 .nav{
     display: flex;
@@ -86,7 +88,14 @@
     }
 }
 
+.navInfo{
+    display: flex;
+    align-items: center;
+}
+.NavIcon{
+    display: none;
 
+}  
 @media screen and (max-width: 900px) {
     .nav{
         display: none;
@@ -97,32 +106,15 @@
     }
 
     .navInfo{
-        padding-left: 16px;
+        padding-left: 8pxpx;
     }
-}
-
-.navInfo{
-    display: flex;
-    align-items: center;
-}
-
-.NavIcon{
-    display: none;
-
-}  
-
-p {
-    font-weight: bold;
-}
-@media screen and (max-width: 900px) {
-
     .NavIcon{
     display: flex;
     justify-content:flex-end;
 
     align-items: center;
     height: fit-content;
-    width: 64px;
+
     cursor: pointer;
     color: #292929;
     padding-right: 16px;

@@ -3,7 +3,8 @@
     z-index: 999;
     width: 350px;
     height: 100%;
-    background: rgb(228, 227, 230);
+    background: rgb(234,230,255);
+    background: linear-gradient(304deg, rgba(234,230,255,1) 0%, rgba(233,232,255,1) 35%, rgba(234,230,255,1) 100%);
     display: grid;
     align-items: center;
     top: 0;
@@ -58,7 +59,7 @@
 }
 
 .sidebarLink :hover {
-      color: #e31837;
+      color: #b9b9b9;
       transition: 0.2s ease-in-out;
 }
 

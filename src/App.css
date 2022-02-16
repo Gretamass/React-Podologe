@@ -17,9 +17,11 @@ body {
 }
 .app {
   height: 100%;
-  background-color: rgb(241, 241, 241);
-}
+  background: rgb(234,230,255);
+background: linear-gradient(304deg, rgba(234,230,255,1) 0%, rgba(233,232,255,1) 35%, rgba(234,230,255,1) 100%);
 
+}
+  
 
 /* FONT */
 
@@ -31,8 +33,8 @@ h1, h2, h3, h4, h5, h6, p ,a {
 h1 {
   color: var(--text-color);
   padding: 3px;
-  font-size: 42px;
-  font-weight: 500;
+  font-size: 32px;
+
   
 }
 h2{
@@ -94,7 +96,7 @@ a{
   flex-direction: column;
   justify-content: center;
   align-items:center;
-  background: #8082BB;
+  background: #9991cc;
   border-radius:20px;
   padding-top: 1rem;
   max-width: 1140px;
@@ -108,7 +110,7 @@ a{
   flex-direction: column;
   justify-content: center;
   align-items:center;
-  background: #8082BB;
+  background: #9991cc;
   border-radius:20px;
   padding-top: 1rem;
   width: fit-content;
@@ -123,7 +125,7 @@ a{
   flex-direction: column;
   justify-content: center;
   align-items:center;
-  background-color:  #8082BB;
+  background-color:  #9991cc;
   border-radius:20px;
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -132,7 +134,7 @@ a{
 
 
 .headingDark{
-  font-size: clamp(2.2rem, 2.5vw, 3rem);
+  font-size: clamp(2.2rem, 2.3vw, 3rem);
   font-weight:400;
   text-align: center;
   margin-bottom: 3rem;
@@ -141,10 +143,18 @@ a{
 }
 
 .headingLight{
-  font-size: clamp(2rem, 2.5vw, 3rem);
+  font-size: clamp(2rem, 2.3vw, 3rem);
   font-weight:400;
   text-align: center;
   margin-bottom: 3rem;
   color: rgb(241, 241, 241);
   text-transform: uppercase;
+}
+
+.mainRow{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 64px;
+  margin-right: 64px;
 }

@@ -12,10 +12,10 @@ const Hero = () => {
       <div className="container">
           <div className="title">
             <div className="title1">
-              Medicininis pedikiūras Kaune Pėdų priežiūros paslaugos
+              <h1>Medicininis pedikiūras Kaune Pėdų priežiūros paslaugos</h1>
             </div>
             <div className="title2">
-              Kvalifikuota pėdų priežiūros specialistė Julija Morozova
+              <h2>Kvalifikuota pėdų priežiūros specialistė Julija Morozova</h2>
             </div>
             <div className="heroButton">
                <SecondaryButton  buttontext={"Skambinti"}/>

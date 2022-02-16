@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import './App.css';
 import { BrowserRouter as Router } from 'react-router-dom';
-
+import { Routes ,Route } from 'react-router-dom';
 import Hero from './components/Hero';
 import Services from './components/Services';
 import { servicesData  } from './components/Services/data';
@@ -29,20 +29,39 @@ function App() {
   
   return (
       <Router>
-          <div className="app">
 
+            <div className="app">
+           
             <Navbar toggle={toggle}/>
             <Sidebar  isOpen={isOpen} toggle={toggle} />
-            <Hero />
+            <Routes>
+              <Route path="/" element={<><Hero/><Services heading="Teikiamos paslaugos" buttontext="Sužinoti daugiau" data={servicesData}/><Articles heading="Publikacijos" buttontext="Skaityti daugiau" data={articlesData}/><Testimonials  heading="Atsiliepimai" buttontext="Sužinoti daugiau" data={testimonialsData} /><Pricelist  heading="Kainoraštis" data={pricelistData} /><Gallery heading="Galerija" buttontext="Žiūrėti daugiau" data={galleryData}/><ContactUs heading="Susisiekite su mumis" /></>}> 
+              </Route>
 
-            <Services heading="Teikiamos paslaugos" buttontext="Sužinoti daugiau" data={servicesData}/>
-            <Articles heading="Publikacijos" buttontext="Skaityti daugiau" data={articlesData}/>
-            <Testimonials heading="Atsiliepimai" buttontext="Sužinoti daugiau" data={testimonialsData} />
-            <Pricelist heading="Kainoraštis" data={pricelistData} />
-            <Gallery heading="Galerija" buttontext="Žiūrėti daugiau" data={galleryData}/>
-            <ContactUs heading="Susisiekite su mumis" />
+              <Route path="/services" element={<><Services heading="Teikiamos paslaugos" buttontext="Sužinoti daugiau" data={servicesData}/></>}> 
+              </Route>
+
+              <Route path="/articles" element={<><Articles heading="Publikacijos" buttontext="Skaityti daugiau" data={articlesData}/></>}> 
+              </Route>
+
+              <Route path="/testimonials" element={<><Testimonials heading="Atsiliepimai" buttontext="Sužinoti daugiau" data={testimonialsData}/></>}> 
+              </Route>
+
+              <Route path="/price-list" element={<><Pricelist heading="Kainoraštis" data={pricelistData}/></>}> 
+              </Route>
+
+              <Route path="/gallery" element={<><Gallery heading="Galerija" buttontext="Žiūrėti daugiau" data={galleryData}/></>}> 
+              </Route>
+
+              <Route path="/contact-us" element={<><ContactUs heading="Susisiekite su mumis" /></>}> 
+              </Route>
+            
+            </Routes>
+
             <Footer />
           </div>
+  
+          
       </Router>
 
 

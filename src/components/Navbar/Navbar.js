@@ -16,17 +16,17 @@ const Navbar = ({ toggle }) => {
                     <div className='logo'>
                     <Link to="/"><img src={logo} alt="podologe logo" className='logoHeader' /></Link>
                     </div>
-                    <div className='titleNav' to='/'>Podologė Julija</div>
+                    <Link to="/"><div className='titleNav' to='/'>Podologė Julija</div></Link>
                 </div>
 
                 <div className='nav'>
-                    <Link to="/" className='navigation'>Paslaugos</Link>
-                    <Link to="/" className='navigation'>Kainoraštis</Link>
-                    <Link to="/" className='navigation'>Atsiliepimai</Link>
-                    <Link to="/" className='navigation'>Publikacijos</Link>
-                    <Link to="/" className='navigation'>Apie Mus</Link>
-                    <Link to="/" className='navigation'>Galerija</Link>
-                    <Link to="/" className='navigation'>Kontaktai</Link>
+                    <Link to="/services" className='navigation'>Paslaugos</Link>
+                    <Link to="/price-list" className='navigation'>Kainoraštis</Link>
+                    <Link to="/testimonials" className='navigation'>Atsiliepimai</Link>
+                    <Link to="/articles" className='navigation'>Publikacijos</Link>
+                    <Link to="/about-us" className='navigation'>Apie Mus</Link>
+                    <Link to="/gallery" className='navigation'>Galerija</Link>
+                    <Link to="/contact-us" className='navigation'>Kontaktai</Link>
                 </div>
                 <div className="NavIcon"onClick={toggle} >
                     

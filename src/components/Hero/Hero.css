@@ -14,7 +14,7 @@
   margin-bottom: 24px;
 }
 
-.title2{
+.title2 {
   font-size: 22px;
     margin-bottom: 24px;
 }
@@ -32,31 +32,60 @@ width: 100%;
 }
 
 .hero {
-  height: 750px;
+  height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 24px 30px;
+  padding: 0px 32px;
   flex-flow: wrap;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1200px) {
+  .hero {
+    height: 700px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .hero {
+    height: 650px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .hero {
+    height: fit-content;
+    align-items: flex-start;
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+}
+
+
+
+@media screen and (max-width: 750px) {
     .hero {
      padding-top: 0px; 
+     height: 100vh;
+     align-items: flex-start;
+
     }
     .container{
       display: flex;
       flex-wrap: wrap;
       flex-direction: column;
+      
     }
 
     .title {
-      height: 325px;
+      height: fit-content;
       text-align: center;
+      justify-content: flex-start;
+      padding: 32px 16px;
     }
 
     .titleImage{
-      height: 400px;
+      height: 550px;
       width: auto;
     }
     .title1 {
@@ -77,23 +106,56 @@ width: 100%;
     }
 }
 
-
-@media screen and (max-width: 470px) {
+@media screen and (max-width: 610px) {
   .titleImage{
-    height: 350px;
+    height: 450px;
     width: auto;
   }
   .title {
-    height: 250px;
+    padding: 32px 16px;
+    padding-bottom: 56px;
+  }
+
+}
+
+@media screen and (max-width: 515px) {
+  .hero {
+
+    align-items: center;
+
+   }
+  .titleImage{
+    height: 400px;
+    width: auto;
+  }
+  .title {
+    padding: 0px 16px;
+    padding-bottom: 64px;
+  }
+
+}
+
+@media screen and (max-width: 470px) {
+  
+  .titleImage{
+    height: 400px;
+    width: 400px;
+  }
+  .title {
     text-align: center;
-    justify-content: flex-start;
+    
   }
 
 }
 
 @media screen and (max-width: 420px) {
+
   .titleImage{
-    height: 300px;
-    width: auto;
+    height: 350px;
+    height: 350px;
+  }
+  .title {
+    padding: 36px 16px;
+    padding-bottom: 92px;
   }
 }

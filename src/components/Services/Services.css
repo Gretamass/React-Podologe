@@ -8,22 +8,17 @@
   text-align: center;
   padding-top: 1rem;
   color: rgb(241, 241, 241);
+
  
 }
 
 .services{
     height: 700px;
-    margin-bottom: 100px;
+    margin-bottom: 64px;
     /*background-color: rgb(28, 119, 119);*/
 }
 
 
-@media screen and (max-width: 420px) {
-  .titleImage{
-    height: 300px;
-    width: auto;
-  }
-}
 
 @media screen and (max-width: 640px) {
   .fullContainer{

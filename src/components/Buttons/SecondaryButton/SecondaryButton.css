@@ -3,7 +3,7 @@
     padding: 1rem 3rem;
 
     border: none;
-    background-color: #8082BB;
+    background-color: #9991cc;
     border-radius:20px;
     font-weight: 500;
     color:  rgb(241, 241, 241);
@@ -12,7 +12,7 @@
 }
 
 .secondaryButton:hover {
-      background: #9194ca;
+      background: #857eb1;
       transition: 0.2s ease-out;
       cursor: pointer;
 }
